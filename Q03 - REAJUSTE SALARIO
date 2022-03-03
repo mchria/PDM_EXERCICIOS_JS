@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h2>REAJUSTE SALARIAL</h2>
+   <button onclick= "ReajusteSalarial()">Reajustar Salario</button>  
+  <h4> clique no botão acima para iniciar </h4>
+  <p id= "demo" ></p>
+  <script>
+   function ReajusteSalarial () {
+     var funcionario = {
+       nome: " ",
+       telefone: " ",
+       salario: " ",
+     }
+     funcionario.nome = prompt ( "Informe o nome do funcionario");
+     funcionario.telefone = prompt ( "Informe o telefone do funcionario");
+     var salario = prompt ("Informe o salario atual do funcionario");
+     var reaj = parseFloat (prompt ( "Informe a porcentagem de rajuste salarial"));
+     var SalNovo = (salario - (( reaj * salario)/ 100))
+
+     console.log (" O nome cadastrado é: " + funcionario.nome, "\nO telefone cadastrado é:" + funcionario.telefone, "\nO salario apos o reajuste é: " + SalNovo)
+   }
+    
+
+
+</script>
+
+</body>
+</html>
+
+
