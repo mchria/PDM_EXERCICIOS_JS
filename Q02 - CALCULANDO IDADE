@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculando a idade</h2>
+
+<button onclick= "CalcIdade()">Iniciar</button>
+
+<script>
+function CalcIdade() {
+  var AnoNasci = prompt ("digite o ano de seu nascimento:") 
+  var Idade = (AnoNasci) => {return 2022 - AnoNasci}
+  if (AnoNasci < 0) {
+    throw "digite um valor maior que zero"
+  }
+   else{
+     console.log("Sua idade em 2022 é: " + Idade(AnoNasci))
+   }
+    
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+function CalculandoIdade (){
+  var num1 = parseFloat( prompt ("Informe o primeiro valor"));
+  var num2 = parseFloat( prompt ("Informe o segundo valor"));
+}
+function soma (a, b){
+    try {
+  if (a < 0 || b < 0){
+    throw "o valor é negativo";
+  }
+  var result = a + b;
+  //console.log(result);
+  alert(result);
+  //in o resultado é <p id="q01"></p>
+  document.getElementById("q01").innerHTML =  result;
+ 
+} catch(err){
+    console.log(err);
+  alert(err);
+}
+}
